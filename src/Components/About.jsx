@@ -3,19 +3,15 @@ import React from "react";
 const About = ({ data }) => {
   if (data) {
     let data1 = data.main;
-    var name = data1.name;
     var profilepic = "assets/img/" + data1.image;
     var bio = data1.bio;
     var street = data1.address.street;
     var city = data1.address.city;
-    var state = data1.address.state;
-    var zip = data1.address.zip;
     var phone = data1.phone;
     var email = data1.email;
     var website = data1.website;
     var degree = data1.degree;
     var occupation = data1.occupation;
-    var resumeDownload = data1.resumedownload;
     var interests = data1.interests;
   }
 

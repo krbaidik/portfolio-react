@@ -1,13 +1,13 @@
 import React from "react";
-import Typewriter from "typewriter-effect";
+// import Typewriter from "typewriter-effect";
 import SocialLink from "./SocialLink";
 
 const Header = ({ data }) => {
   if (data) {
     var name = data.name;
     var occupation = data.occupation;
-    var description = data.description;
-    var city = data.address.city;
+    // var description = data.description;
+    // var city = data.address.city;
   }
 
   return (
