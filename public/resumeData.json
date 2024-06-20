@@ -1,0 +1,231 @@
+{
+  "main": {
+    "name": "KR Baidik",
+    "occupation": "Backend Developer",
+    "description": "Crafting Digital Dreams: Where Innovation Meets Imagination.",
+    "image": "profilepic.jpg",
+    "bio": "I am a skilled Laravel developer with 4 years of hands-on experience in PHP web development. Specializing in Laravel, I have successfully delivered numerous projects that showcase my proficiency in backend development, RESTful API integration, and database management. With a strong focus on performance optimization and user-centric design, I am committed to leveraging Laravel's powerful capabilities to create robust and scalable web applications. Continuously learning and adapting to new technologies, I am passionate about delivering high-quality solutions that exceed client expectations and contribute to organizational success.",
+    "contactmessage": "Get in touch",
+    "email": "krbaidik0@gmail.com",
+    "phone": "+977 9868638416",
+    "degree": "Bachelor (CSIT)",
+    "address": {
+      "street": "Patan Road",
+      "city": "Lalitpur",
+      "state": "Bagmati",
+      "zip": "44600"
+    },
+    "website": "https://khubirambaidik.com.np",
+    "resumedownload": "./2023_December_Resume_YOGRAJPAUDEL.pdf",
+    "social": [      
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/krbaidik/",
+        "className": "bi bi-linkedin"
+      },      
+      {
+        "name": "github",
+        "url": "https://github.com/krbaidik",
+        "className": "bi bi-github"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/krbaidik/",
+        "className": "bi bi-instagram"
+      },
+      {
+        "name": "youtube",
+        "url": "https://www.youtube.com/@handsup9584",
+        "className": "bi bi-youtube"
+      },
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/krbaidik/",
+        "className": "bi bi-facebook"
+      },
+      {
+        "name": "twitter",
+        "url": "https://twitter.com/krbaidik",
+        "className": "bi bi-twitter"
+      }
+    ],
+    "interests": [
+      {
+        "title": "Travel/Hiking",
+        "color": "text-primary",
+        "icon": "ri-walk-fill"
+      },
+      {
+        "title": "Reading",
+        "color": "text-danger",
+        "icon": "bi bi-book"
+      },
+      {
+        "title": "Movie/Music",
+        "color": "text-info",
+        "icon": "bi bi-film"
+      },
+      {
+        "title": "Chess",
+        "color": "text-success",
+        "icon": "ri-vip-crown-fill"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "Experienced Laravel developer with 4 years of PHP web development expertise. Skilled in building robust backend solutions, RESTful APIs, and optimizing performance. Strong problem-solving skills, committed to quality and continuous learning.",
+    "education": [
+      {
+        "school": "Nagarjuna College of Information Technology - Kathmandu, Nepal",
+        "degree": "Bachelor's Degree (CSIT) - Tribhuvan University",
+        "graduated": "December 31, 2020",
+        "description": ""
+      },
+      {
+        "school": "Mukti Higher Secondary School Pyuthan, Nepal",
+        "degree": "+2 in Science - Higher Secondary Education Board",
+        "graduated": "December 31, 2020",
+        "description": ""
+      },
+      {
+        "school": "Bhuwaneshwori Higher secondary School - Pyuthan, Nepal",
+        "degree": "School Leaving Certificate (SLC)",
+        "graduated": "December 31, 2020",
+        "description": ""
+      }
+    ],
+    "work": [
+      {
+        "company": "Allstar Technology Pvt. Ltd.",
+        "title": "LARAVEL WEB DEVELOPER",
+        "years": "December 2022 - Present",
+        "description": [
+          {
+            "text": "Managed project and web strategic planning for entire team."
+          },
+          {
+            "text": "Collaborated with designers to implement concept and design of website."
+          },
+          {
+            "text": "Integrated payment processing features onto Education Management System."
+          },
+          {
+            "text": "Biometric attendance implementation."
+          },
+          {
+            "text": "Tested and integrated different sms api’s."
+          },
+          {
+            "text": "Optimized task scheduling to minimize resource consumption\nand ensure efficient utilization of server resources"
+          }
+        ]
+      },
+      {
+        "company": "Easy Access Pvt. Ltd",
+        "title": "LARAVEL WEB DEVELOPER",
+        "years": "January 2021 - November 2022",
+        "description": [
+          {
+            "text": "Developed strong communication and organizational skills\nthrough working on group projects."
+          },
+          {
+            "text": "Managed time efficiently in order to complete all tasks\nwithin deadlines."
+          },
+          {
+            "text": "Work with developers to design algorithms and flowcharts."
+          },
+          {
+            "text": "Proficient in handling REST API, Eloquent ORM, and AJAX\nrequests."
+          },
+          {
+            "text": "Contributed to back-end experience and collaborated on\nAPIs."
+          }
+        ]
+      }
+    ],
+    "skills": [      
+      {
+        "name": "PHP/Laravel",
+        "level": "80"
+      },
+      {
+        "name": "Python/Django",
+        "level": "50"
+      },
+      {
+        "name": "HTML/CSS/JavaScript/AJAX",
+        "level": "70"
+      },
+      {
+        "name": "MySQL",
+        "level": "75"
+      },
+      {
+        "name": "GitHub/Bitbucket",
+        "level": "75"
+      },
+      {
+        "name": "ReactJS/VueJS",
+        "level": "40"
+      },
+      {
+        "name": "Java/C/C++",
+        "level": "30"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Easy Health Management System",
+        "category": "web applications",
+        "image": "ehims.jpg",
+        "url": "https://ehmis.hetaudamun.gov.np/",
+        "details": "EHIMS is a system that monitors the performance of Health Institution."
+      },
+      {
+        "title": "emedicareSoft: A Complete Health Information Management",
+        "category": "web applications",
+        "image": "emedicaresoft.jpg",
+        "url": "https://www.emedicaresoft.com/",
+        "details": "emedicareSoft is a complete digital health information management system that provides hospitals and other healthcare facilities with all-in-one solutions."
+      },
+      {
+        "title": "Education Management System (Allstar EMS)",
+        "category": "web applications",
+        "image": "allstarems.jpg",
+        "url": "https://allstarems.com/ems/register",
+        "details": "An education management system improves both administrative processes and relations between students and teachers.\nHaving a good education management system can ensure more organization in a school’s day-to-day of the school, optimizing the performance of managers and even the quality of education."
+      },
+      {
+        "title": "Bulk Sms (Allstar SMS)",
+        "category": "web applications",
+        "image": "allstarsms.jpg",
+        "url": "https://sms.allstar.com.np/",
+        "details": ""
+      },
+      {
+        "title": "Langtang Eco Resort.",
+        "category": "web applications",
+        "image": "langtang.jpg",
+        "url": "https://langtangecoresort.com/",
+        "details": "This is an ecommerce site."
+      },
+      {
+        "title": "Food Ordering System (Food4Me)",
+        "category": "web applications",
+        "image": "dristikondaily.png",
+        "url": "javascript:void(0)",
+        "details": "This is a ecommerce site."
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "",
+        "user": ""
+      }
+    ]
+  }
+}
