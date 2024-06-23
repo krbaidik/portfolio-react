@@ -84,28 +84,49 @@ const About = ({ data }) => {
 
         </div>
 
-        <div className="skills container">
+        {/*<div className="skills container">*/}
+
+        {/*  <div className="section-title">*/}
+        {/*    <h2>Skills</h2>*/}
+        {/*  </div>*/}
+
+        {/*  <div className="row skills-content">*/}
+
+        {/*    {data.resume.skills.map((skill) => {*/}
+        {/*      return (*/}
+        {/*          <div className="col-lg-6">*/}
+        {/*            <div className="progress">*/}
+        {/*              <span className="skill">{skill.name} <i className="val">{skill.level}%</i></span>*/}
+        {/*              <div className="progress-bar-wrap">*/}
+        {/*                <div className="progress-bar" role="progressbar" aria-valuenow={skill.level} aria-valuemin="0" aria-valuemax="100" style={{width:skill.level+'%'}}></div>*/}
+        {/*              </div>*/}
+        {/*            </div>*/}
+        {/*          </div>*/}
+        {/*      )*/}
+        {/*    })}*/}
+        {/*  </div>*/}
+
+        {/*</div>*/}
+
+        <div className="interests container">
 
           <div className="section-title">
             <h2>Skills</h2>
           </div>
 
-          <div className="row skills-content">
-
+          <div className="row">
             {data.resume.skills.map((skill) => {
               return (
-                  <div className="col-lg-6">
-                    <div className="progress">
-                      <span className="skill">{skill.name} <i className="val">{skill.level}%</i></span>
-                      <div className="progress-bar-wrap">
-                        <div className="progress-bar" role="progressbar" aria-valuenow={skill.level} aria-valuemin="0" aria-valuemax="100" style={{width:skill.level+'%'}}></div>
-                      </div>
+                  <div className="col-lg-3 col-md-4 mb-3">
+                    <div className="icon-box">
+                      <i className={skill.icon+' '+skill.color}></i>
+                      <h3>{skill.name}</h3>
                     </div>
                   </div>
               )
-            })}
+            })
+            }
           </div>
-
         </div>
 
         <div className="interests container">

@@ -1,21 +1,22 @@
 import React from "react";
-// import Typewriter from "typewriter-effect";
+import Typewriter from "typewriter-effect";
 import SocialLink from "./SocialLink";
 
 const Header = ({ data }) => {
-  if (data) {
     var name = data.name;
-    var occupation = data.occupation;
-    // var description = data.description;
-    // var city = data.address.city;
-  }
 
   return (
       <header id="header">
         <div className="container">
 
           <h1><a href="/">{name}</a></h1>
-          <h2>I'm a passionate <span>{occupation}</span> from Nepal</h2>
+          <h2 className='d-flex typewriter'>I'm a passionate <var className="mx-1"><Typewriter
+              options={{
+                strings: data.typeWriter,
+                autoStart: true,
+                loop: true,
+              }}
+          /></var></h2>
 
           <nav id="navbar" className="navbar">
             <ul className="menu">

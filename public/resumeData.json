@@ -2,6 +2,7 @@
   "main": {
     "name": "KR Baidik",
     "occupation": "Backend Developer",
+    "typeWriter": ["Backend Developer","Frontend Developer"],
     "description": "Crafting Digital Dreams: Where Innovation Meets Imagination.",
     "image": "profilepic.jpg",
     "bio": "I am a skilled Laravel developer with 4 years of hands-on experience in PHP web development. Specializing in Laravel, I have successfully delivered numerous projects that showcase my proficiency in backend development, RESTful API integration, and database management. With a strong focus on performance optimization and user-centric design, I am committed to leveraging Laravel's powerful capabilities to create robust and scalable web applications. Continuously learning and adapting to new technologies, I am passionate about delivering high-quality solutions that exceed client expectations and contribute to organizational success.",
@@ -146,31 +147,48 @@
     "skills": [      
       {
         "name": "PHP/Laravel",
-        "level": "80"
+        "color": "text-primary",
+        "icon": "ri-terminal-box-line"
       },
       {
         "name": "Python/Django",
-        "level": "50"
+        "color": "text-secondary",
+        "icon": "ri-terminal-box-line"
       },
       {
-        "name": "HTML/CSS/JavaScript/AJAX",
-        "level": "70"
+        "name": "HTML/CSS",
+        "color": "text-info",
+        "icon": "ri-html5-line"
+      },
+      {
+        "name": "JavaScript/AJAX",
+        "color": "text-danger",
+        "icon": "ri-terminal-box-line"
       },
       {
         "name": "MySQL",
-        "level": "75"
+        "color": "text-warning",
+        "icon": "ri-terminal-box-line"
       },
       {
         "name": "GitHub/Bitbucket",
-        "level": "75"
+        "color": "text-danger",
+        "icon": "ri-github-line"
       },
       {
         "name": "ReactJS/VueJS",
-        "level": "40"
+        "color": "text-primary",
+        "icon": "ri-terminal-box-line"
       },
       {
-        "name": "Java/C/C++",
-        "level": "30"
+        "name": "Java",
+        "color": "text-primary",
+        "icon": "ri-terminal-box-line"
+      },
+      {
+        "name": "C/C++",
+        "color": "text-primary",
+        "icon": "ri-terminal-box-line"
       }
     ]
   },

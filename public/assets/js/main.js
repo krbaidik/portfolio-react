@@ -119,6 +119,7 @@
 
   $(document).on('click', '.nav-link', function (){
     let header = select('#header')
+    let typeWriter = $('.typewriter')
     let sections = $('section')
     let navMenu = $(this).attr('href');
 
@@ -128,6 +129,7 @@
     let navbarToggle = select('.mobile-nav-toggle')
 
     if (navMenu === '#header') {
+      typeWriter.removeClass('d-none')
       header.classList.remove('header-top')
       navbar.classList.remove('navbar-mobile')
       navbarToggle.classList.toggle('bi-list')
@@ -136,6 +138,8 @@
         item.classList.remove('section-show')
       })
     }
+
+    typeWriter.addClass('d-none')
 
     if (navbar.classList.contains('navbar-mobile')) {
       navbar.classList.remove('navbar-mobile')
