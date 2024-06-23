@@ -98,7 +98,7 @@ const Contact = ({ data }) => {
             </div>
           </div>
 
-          <form action="#" method="post" role={form} className="php-email-form mt-4" ref={form} onSubmit={sendEmail}>
+          <form action="#" method="post" className="php-email-form mt-4" onSubmit={sendEmail}>
             <div className="row">
               <div className="col-md-6 form-group">
                 <input type="text" name="from_name" value={formData.from_name} className="form-control" id="from_name" placeholder="Your Name" onChange={handleChange} required />
