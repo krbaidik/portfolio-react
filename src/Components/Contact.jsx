@@ -1,32 +1,57 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import SocialLink from "./SocialLink";
-
+import emailjs from '@emailjs/browser';
 const Contact = ({ data }) => {
-  // const [name, setName] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [subject, setSubject] = useState("");
-  // const [message, setMessage] = useState("");
+    let street = data.address.street;
+    let city = data.address.city;
+    let contact = data.phone;
+    let contactEmail = data.email;
+    let contactMessage = data.contactmessage;
 
-  if (data) {
-    // var contactName = data.name;
-    var street = data.address.street;
-    var city = data.address.city;
-    // var state = data.address.state;
-    // var zip = data.address.zip;
-    var contact = data.phone;
-    var contactEmail = data.email;
-    var contactMessage = data.contactmessage;
-  }
 
-  // const submitForm = () => {
-  //   window.open(
-  //     `mailto:${contactEmail}?subject=${encodeURIComponent(
-  //       subject
-  //     )}&body=${encodeURIComponent(name)} (${encodeURIComponent(
-  //       email
-  //     )}): ${encodeURIComponent(message)}`
-  //   );
-  // };
+  const initialFormData = {
+    from_name: '',
+    user_email: '',
+    message: ''
+  };
+
+  let btn = 'Send Message';
+  const [formData, setFormData] = useState(initialFormData);
+  const [loading, setLoading] = useState(false);
+  const [button, setButton] = useState(btn);
+  const [smsSent, setSmsSent] = useState(false);
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    setLoading(true)
+    setButton('Sending..')
+          emailjs
+        .sendForm('service_u0p527t', 'template_lmdhsb4', form.current, {
+             publicKey: 'VJ6zqiH91Sd0fDJye',
+           })
+           .then(
+             () => {
+               setFormData(initialFormData);
+               setLoading(false)
+               setSmsSent(true)
+               setButton(btn)
+             },
+             (error) => {
+                  setSmsSent(false)
+               console.log('FAILED...', error.text);
+             },
+         );
+  };
 
   return (
       <section id="contact" className="contact">
@@ -73,27 +98,29 @@ const Contact = ({ data }) => {
             </div>
           </div>
 
-          <form action="#" method="post" className="php-email-form mt-4">
+          <form action="#" method="post" className="php-email-form mt-4" ref={form} onSubmit={sendEmail}>
             <div className="row">
               <div className="col-md-6 form-group">
-                <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" required />
+                <input type="text" name="from_name" value={formData.from_name} className="form-control" id="from_name" placeholder="Your Name" onChange={handleChange} required />
               </div>
               <div className="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" className="form-control" name="email" id="email" placeholder="Your Email" required />
+                <input type="email" className="form-control" value={formData.user_email} name="user_email" id="user_email" placeholder="Your Email" onChange={handleChange} required />
               </div>
             </div>
             <div className="form-group mt-3">
-              <input type="text" className="form-control" name="subject" id="subject" placeholder="Subject" required />
+              <textarea className="form-control" name="message" value={formData.message} rows="5" placeholder="Message" onChange={handleChange} required></textarea>
             </div>
-            <div className="form-group mt-3">
-              <textarea className="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            <div className="text-center my-3"><button type="submit" disabled={loading}>
+              {button}</button></div>
+            <div>
+              {smsSent ? (
+                  <div className="alert alert-success alert-dismissible fade show py-2" role="alert">
+                    <strong>Congrats!</strong> Your message has been sent. Thank you!
+                    <button type="button" className="btn-close py-2" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
+              ) : ''
+              }
             </div>
-            <div className="my-3">
-              <div className="loading">Loading</div>
-              <div className="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-            </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
           </form>
         </div>
       </section>
